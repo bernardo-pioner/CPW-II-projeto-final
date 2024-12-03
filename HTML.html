@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Interativo</title>
-    <link rel="stylesheet" href="CSS.css">
-    <script src="JS.js" defer></script>
+    <link rel="stylesheet" href="CPW-AVAL2.css"> 
+    <script src="CPW-AVAL2.js" defer></script>
 </head>
 <body>
     <div id="quiz-container">
-        <div id="tela-inicial">
-            <h1>Bem-vindo(a) ao Quiz!</h1>
-            <input type="text" id="nome-usuario" placeholder="Digite seu nome">
-            <button id="btn-iniciar">Iniciar Quiz</button>
+        <h1>Quiz Interativo</h1>
+        <div id="quiz">
         </div>
-        
-        <div id="tela-perguntas" style="display: none;">
-            <h2 id="texto-pergunta"></h2>
-            <ul id="lista-opcoes"></ul>
-            <button id="btn-proxima" style="display: none;">Próxima</button>
+        <div id="quiz-navigation">
+            <button id="prev">Pergunta Anterior</button>
+            <button id="next">Próxima Pergunta</button>
         </div>
-        
-        <div id="tela-resultado" style="display: none;">
-            <h2>Parabéns, <span id="resultado-nome-usuario"></span>!</h2>
-            <p>Você acertou <span id="qtd-acertos"></span> de 10 perguntas!</p>
-            <button id="btn-reiniciar">Tentar Novamente</button>
-        </div>
+        <div id="results"></div>
     </div>
 </body>
 </html>
